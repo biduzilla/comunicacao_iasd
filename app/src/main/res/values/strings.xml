@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ComunicacaoDemandas</string>
+    <string name="titulo">Título</string>
+    <string name="descricao">Descricão</string>
+    <string name="prazo">Selecione o Prazo</string>
+    <string name="tarefas">Tarefas</string>
 </resources>

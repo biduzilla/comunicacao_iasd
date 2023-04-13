@@ -10,15 +10,16 @@
     <include
         android:id="@+id/toolbar_voltar"
         layout="@layout/toolbar_voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_salvar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_voltar">
@@ -33,7 +34,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:hint="@string/titulo"
                 android:textColorHint="@color/mikado_yellow"
                 app:boxBackgroundColor="@color/yale_blue"
@@ -56,7 +57,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:hint="@string/descricao"
                 android:textColorHint="@color/mikado_yellow"
                 app:boxBackgroundColor="@color/yale_blue"
@@ -79,7 +80,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:hint="@string/tarefas"
                 android:textColorHint="@color/mikado_yellow"
                 app:boxBackgroundColor="@color/yale_blue"
@@ -95,6 +96,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
+                    android:paddingBottom="90dp"
                     android:textColor="@color/mikado_yellow" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -103,7 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/btn_press"
+                android:background="@drawable/btn_press_rounded"
                 android:fontFamily="@font/montserrat_medium"
                 android:text="@string/prazo"
                 android:textAllCaps="false"
@@ -111,9 +113,24 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
+
         </LinearLayout>
 
     </ScrollView>
 
+    <android.widget.Button
+        android:id="@+id/btn_salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_press"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/salvar"
+        android:textAllCaps="false"
+        android:textColor="@color/yale_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

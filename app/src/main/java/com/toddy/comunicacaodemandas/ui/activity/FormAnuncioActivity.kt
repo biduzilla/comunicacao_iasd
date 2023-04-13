@@ -37,8 +37,6 @@ class FormAnuncioActivity : AppCompatActivity() {
 
     private fun verificaDados() {
 
-        ocultarTeclado()
-
         with(binding) {
             val titulo: String = edtTitulo.text.toString().trim()
             val descricao: String = edtDesc.text.toString().trim()
@@ -92,8 +90,14 @@ class FormAnuncioActivity : AppCompatActivity() {
     }
 
     private fun configClicks() {
-        binding.btnDatePicker.setOnClickListener { abrirCalendario() }
-        binding.btnSalvar.setOnClickListener { verificaDados() }
+        binding.btnDatePicker.setOnClickListener {
+            ocultarTeclado()
+            abrirCalendario()
+        }
+        binding.btnSalvar.setOnClickListener {
+            ocultarTeclado()
+            verificaDados()
+        }
     }
 
     private fun abrirCalendario() {

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-mergeDebugResources-48:/layout/activity_form_anuncio.xml",
+        "source": "com.toddy.comunicacaodemandas.app-main-51:/layout/activity_form_anuncio.xml"
+    },
+    {
+        "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-mergeDebugResources-48:\\layout\\toolbar_voltar.xml",
+        "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-51:\\layout\\toolbar_voltar.xml"
+    },
+    {
+        "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-mergeDebugResources-48:\\layout\\activity_form_anuncio.xml",
+        "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-51:\\layout\\activity_form_anuncio.xml"
+    },
+    {
+        "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-mergeDebugResources-48:\\layout\\dialog_calendar.xml",
+        "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-51:\\layout\\dialog_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-mergeDebugResources-48:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-51:\\layout\\activity_main.xml"
+    }
+]

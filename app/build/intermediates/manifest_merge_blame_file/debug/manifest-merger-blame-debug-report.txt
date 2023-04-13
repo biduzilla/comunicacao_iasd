@@ -1,0 +1,193 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.toddy.comunicacaodemandas"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-database:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\d87e2ca966bb4e2becabc03dda3e9186\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+13-->[com.google.firebase:firebase-database:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\d87e2ca966bb4e2becabc03dda3e9186\transformed\firebase-database-20.1.0\AndroidManifest.xml:24:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-database:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\d87e2ca966bb4e2becabc03dda3e9186\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:5-67
+14-->[com.google.firebase:firebase-database:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\d87e2ca966bb4e2becabc03dda3e9186\transformed\firebase-database-20.1.0\AndroidManifest.xml:25:22-64
+15
+16    <permission
+16-->[androidx.core:core:1.9.0] C:\Users\lhcteles\.gradle\caches\transforms-3\61e069618d6b423984d1aa333c1d05e8\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+17        android:name="com.toddy.comunicacaodemandas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.9.0] C:\Users\lhcteles\.gradle\caches\transforms-3\61e069618d6b423984d1aa333c1d05e8\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.9.0] C:\Users\lhcteles\.gradle\caches\transforms-3\61e069618d6b423984d1aa333c1d05e8\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.toddy.comunicacaodemandas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.9.0] C:\Users\lhcteles\.gradle\caches\transforms-3\61e069618d6b423984d1aa333c1d05e8\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.9.0] C:\Users\lhcteles\.gradle\caches\transforms-3\61e069618d6b423984d1aa333c1d05e8\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+21
+22    <application
+22-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:5:5-41:19
+23        android:allowBackup="true"
+23-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:6:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.9.0] C:\Users\lhcteles\.gradle\caches\transforms-3\61e069618d6b423984d1aa333c1d05e8\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+25        android:dataExtractionRules="@xml/data_extraction_rules"
+25-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:7:9-65
+26        android:debuggable="true"
+27        android:fullBackupContent="@xml/backup_rules"
+27-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:8:9-54
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:9:9-43
+29        android:label="@string/app_name"
+29-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:10:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:11:9-54
+31        android:supportsRtl="true"
+31-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:12:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.ComunicacaoDemandas" >
+33-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:13:9-57
+34        <activity
+34-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:15:9-27:20
+35            android:name="com.toddy.comunicacaodemandas.ui.activity.FormAnuncioActivity"
+35-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:16:13-60
+36            android:exported="true" >
+36-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:17:13-36
+37            <intent-filter>
+37-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:19:13-23:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:20:17-69
+38-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:20:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:22:17-77
+40-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:22:27-74
+41            </intent-filter>
+42
+43            <meta-data
+43-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:24:13-26:36
+44                android:name="android.app.lib_name"
+44-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:25:17-52
+45                android:value="" />
+45-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:26:17-33
+46        </activity>
+47        <activity
+47-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:28:9-36:20
+48            android:name="com.toddy.comunicacaodemandas.ui.activity.MainActivity"
+48-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:29:13-53
+49            android:exported="false" >
+49-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:30:13-37
+50            <meta-data
+50-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:24:13-26:36
+51                android:name="android.app.lib_name"
+51-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:25:17-52
+52                android:value="" />
+52-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:26:17-33
+53        </activity>
+54
+55        <meta-data
+55-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:38:9-40:57
+56            android:name="preloaded_fonts"
+56-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:39:13-43
+57            android:resource="@array/preloaded_fonts" />
+57-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:40:13-54
+58
+59        <service
+59-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\dcb25f89a46fc0d31d0b914f2570928d\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:11:9-17:19
+60            android:name="com.google.firebase.components.ComponentDiscoveryService"
+60-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\dcb25f89a46fc0d31d0b914f2570928d\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:12:13-84
+61            android:directBootAware="true"
+61-->[com.google.firebase:firebase-common:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\48b9cf7765246a4fe2ad7415375ffbc7\transformed\firebase-common-20.3.0\AndroidManifest.xml:34:13-43
+62            android:exported="false" >
+62-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\dcb25f89a46fc0d31d0b914f2570928d\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:13:13-37
+63            <meta-data
+63-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\dcb25f89a46fc0d31d0b914f2570928d\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:14:13-16:85
+64                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+64-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\dcb25f89a46fc0d31d0b914f2570928d\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:15:17-124
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.firebase:firebase-database-ktx:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\dcb25f89a46fc0d31d0b914f2570928d\transformed\firebase-database-ktx-20.1.0\AndroidManifest.xml:16:17-82
+66            <meta-data
+66-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\41507e95bdc720c950ef2dfedd52e453\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:14:13-16:85
+67                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+67-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\41507e95bdc720c950ef2dfedd52e453\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:15:17-113
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\41507e95bdc720c950ef2dfedd52e453\transformed\firebase-common-ktx-20.3.0\AndroidManifest.xml:16:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-database:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\d87e2ca966bb4e2becabc03dda3e9186\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+70                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+70-->[com.google.firebase:firebase-database:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\d87e2ca966bb4e2becabc03dda3e9186\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-database:20.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\d87e2ca966bb4e2becabc03dda3e9186\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+72        </service>
+73
+74        <provider
+74-->[com.google.firebase:firebase-common:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\48b9cf7765246a4fe2ad7415375ffbc7\transformed\firebase-common-20.3.0\AndroidManifest.xml:25:9-30:39
+75            android:name="com.google.firebase.provider.FirebaseInitProvider"
+75-->[com.google.firebase:firebase-common:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\48b9cf7765246a4fe2ad7415375ffbc7\transformed\firebase-common-20.3.0\AndroidManifest.xml:26:13-77
+76            android:authorities="com.toddy.comunicacaodemandas.firebaseinitprovider"
+76-->[com.google.firebase:firebase-common:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\48b9cf7765246a4fe2ad7415375ffbc7\transformed\firebase-common-20.3.0\AndroidManifest.xml:27:13-72
+77            android:directBootAware="true"
+77-->[com.google.firebase:firebase-common:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\48b9cf7765246a4fe2ad7415375ffbc7\transformed\firebase-common-20.3.0\AndroidManifest.xml:28:13-43
+78            android:exported="false"
+78-->[com.google.firebase:firebase-common:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\48b9cf7765246a4fe2ad7415375ffbc7\transformed\firebase-common-20.3.0\AndroidManifest.xml:29:13-37
+79            android:initOrder="100" />
+79-->[com.google.firebase:firebase-common:20.3.0] C:\Users\lhcteles\.gradle\caches\transforms-3\48b9cf7765246a4fe2ad7415375ffbc7\transformed\firebase-common-20.3.0\AndroidManifest.xml:30:13-36
+80
+81        <activity
+81-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\lhcteles\.gradle\caches\transforms-3\9c4a2d89e22a7b1e6685826ab4643188\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+82            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+82-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\lhcteles\.gradle\caches\transforms-3\9c4a2d89e22a7b1e6685826ab4643188\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+83            android:exported="false"
+83-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\lhcteles\.gradle\caches\transforms-3\9c4a2d89e22a7b1e6685826ab4643188\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+84            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+84-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\lhcteles\.gradle\caches\transforms-3\9c4a2d89e22a7b1e6685826ab4643188\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+85
+86        <meta-data
+86-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\277df2ec142ed3bab5f6ebc3feac2e12\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+87            android:name="com.google.android.gms.version"
+87-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\277df2ec142ed3bab5f6ebc3feac2e12\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+88            android:value="@integer/google_play_services_version" />
+88-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\lhcteles\.gradle\caches\transforms-3\277df2ec142ed3bab5f6ebc3feac2e12\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+89
+90        <uses-library
+90-->[androidx.window:window:1.0.0] C:\Users\lhcteles\.gradle\caches\transforms-3\f316822545f8552d57a34c3a543d1615\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+91            android:name="androidx.window.extensions"
+91-->[androidx.window:window:1.0.0] C:\Users\lhcteles\.gradle\caches\transforms-3\f316822545f8552d57a34c3a543d1615\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+92            android:required="false" />
+92-->[androidx.window:window:1.0.0] C:\Users\lhcteles\.gradle\caches\transforms-3\f316822545f8552d57a34c3a543d1615\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+93        <uses-library
+93-->[androidx.window:window:1.0.0] C:\Users\lhcteles\.gradle\caches\transforms-3\f316822545f8552d57a34c3a543d1615\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+94            android:name="androidx.window.sidecar"
+94-->[androidx.window:window:1.0.0] C:\Users\lhcteles\.gradle\caches\transforms-3\f316822545f8552d57a34c3a543d1615\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+95            android:required="false" />
+95-->[androidx.window:window:1.0.0] C:\Users\lhcteles\.gradle\caches\transforms-3\f316822545f8552d57a34c3a543d1615\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+96
+97        <provider
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lhcteles\.gradle\caches\transforms-3\c7def3f54ef6c1363218761ce1874746\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+98            android:name="androidx.startup.InitializationProvider"
+98-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lhcteles\.gradle\caches\transforms-3\c7def3f54ef6c1363218761ce1874746\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+99            android:authorities="com.toddy.comunicacaodemandas.androidx-startup"
+99-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lhcteles\.gradle\caches\transforms-3\c7def3f54ef6c1363218761ce1874746\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+100            android:exported="false" >
+100-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lhcteles\.gradle\caches\transforms-3\c7def3f54ef6c1363218761ce1874746\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+101            <meta-data
+101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lhcteles\.gradle\caches\transforms-3\c7def3f54ef6c1363218761ce1874746\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+102                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+102-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lhcteles\.gradle\caches\transforms-3\c7def3f54ef6c1363218761ce1874746\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+103                android:value="androidx.startup" />
+103-->[androidx.emoji2:emoji2:1.2.0] C:\Users\lhcteles\.gradle\caches\transforms-3\c7def3f54ef6c1363218761ce1874746\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+104            <meta-data
+104-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\lhcteles\.gradle\caches\transforms-3\bf7eda95417b8113bc1e60b8abb99865\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+105                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+105-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\lhcteles\.gradle\caches\transforms-3\bf7eda95417b8113bc1e60b8abb99865\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+106                android:value="androidx.startup" />
+106-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\lhcteles\.gradle\caches\transforms-3\bf7eda95417b8113bc1e60b8abb99865\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+107        </provider>
+108    </application>
+109
+110</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">541441121252-uol5t7l9462q4ivc9r0bkh1vrdq5tppq.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">541441121252</string>
+    <string name="google_api_key" translatable="false">AIzaSyDD4dPR2xyGGvrELrBDuzvDoCQ05scHSn0</string>
+    <string name="google_app_id" translatable="false">1:541441121252:android:deae7e2234f76303f945f1</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDD4dPR2xyGGvrELrBDuzvDoCQ05scHSn0</string>
+    <string name="google_storage_bucket" translatable="false">comunica-iasd.appspot.com</string>
+    <string name="project_id" translatable="false">comunica-iasd</string>
+</resources>

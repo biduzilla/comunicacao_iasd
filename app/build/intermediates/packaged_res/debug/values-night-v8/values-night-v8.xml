@@ -3,7 +3,7 @@
     <style name="Theme.ComunicacaoDemandas" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/mikado_yellow</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/yale_blue</item>
         <item name="colorOnPrimary">@color/black</item>
         
         <item name="colorSecondary">@color/mikado_yellow</item>

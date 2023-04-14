@@ -2820,6 +2820,7 @@ int drawable ic_back 0x7f0800a0
 int drawable ic_clear_black_24 0x7f0800a1
 int drawable ic_clock_black_24dp 0x7f0800a2
 int drawable ic_edit 0x7f080102
+int drawable ic_finalizado 0x7f080104
 int drawable ic_keyboard_black_24dp 0x7f0800a3
 int drawable ic_launcher_background 0x7f0800a4
 int drawable ic_launcher_foreground 0x7f0800a5
@@ -3586,6 +3587,7 @@ int layout dialog_verificacao_task 0x7f0d0071
 int layout fragment_anuncio_finalizado 0x7f0d002f
 int layout fragment_anuncio_tarefas 0x7f0d0030
 int layout item_anuncio 0x7f0d0031
+int layout item_anuncio_finalizado 0x7f0d0073
 int layout m3_alert_dialog 0x7f0d0032
 int layout m3_alert_dialog_actions 0x7f0d0033
 int layout m3_alert_dialog_title 0x7f0d0034

@@ -14,6 +14,7 @@ import com.toddy.comunicacaodemandas.database.AppDatabase
 import com.toddy.comunicacaodemandas.databinding.FragmentAnuncioTarefasBinding
 import com.toddy.comunicacaodemandas.extensions.Toast
 import com.toddy.comunicacaodemandas.extensions.iniciaActivity
+import com.toddy.comunicacaodemandas.modelo.Anuncio
 import com.toddy.comunicacaodemandas.ui.activity.DetalhesAnuncioActivity
 import com.toddy.comunicacaodemandas.ui.activity.FormAnuncioActivity
 import com.toddy.comunicacaodemandas.ui.adapter.AnuncioAdapter
@@ -56,7 +57,14 @@ class AnuncioTarefasFragment : Fragment() {
         binding.progressBar.visibility = View.GONE
         AnuncioFirebase().recuperaAnuncios { anunciosList ->
             anunciosList?.let {
-                adapter.atualiza(anunciosList)
+                val anuncioTarefas = mutableListOf<Anuncio>()
+
+                anunciosList.forEach { anuncio ->
+
+                    if (!anuncio.finalizado)
+                        anuncioTarefas.add(anuncio)
+                }
+                adapter.atualiza(anuncioTarefas)
                 binding.rv.visibility = View.VISIBLE
             }
         }

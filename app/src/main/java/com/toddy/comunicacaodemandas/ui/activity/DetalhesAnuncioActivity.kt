@@ -3,12 +3,15 @@ package com.toddy.comunicacaodemandas.ui.activity
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.LinearLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.toddy.comunicacaodemandas.ID_ANUNCIO
+import com.toddy.comunicacaodemandas.IS_FINALIZADO
 import com.toddy.comunicacaodemandas.databinding.ActivityDetalhesAnuncioBinding
 import com.toddy.comunicacaodemandas.databinding.DialogVerificacaoTaskBinding
 import com.toddy.comunicacaodemandas.modelo.Anuncio
@@ -22,6 +25,7 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
     }
 
     private var anuncio = Anuncio()
+    private var isFinalizado = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,20 +56,29 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
     }
 
     private fun salvarFechar() {
-        AnuncioFirebase().salvarAnuncio(anuncio)
+        if (!isFinalizado) {
+            AnuncioFirebase().salvarAnuncio(anuncio)
+        }
         finish()
     }
 
 
     private fun tentaCarregarAnuncio() {
         val anuncioId = intent.getStringExtra(ID_ANUNCIO)
+        Log.i("infoteste", "tentaCarregarAnuncio: $anuncioId")
         anuncioId?.let {
             AnuncioFirebase().recuperaAnuncioById(it, binding) { anuncioRecuperado ->
                 anuncioRecuperado?.let { anuncio ->
                     carregaDados(anuncio)
+
                     gerarCheckList()
                 }
             }
+        }
+        isFinalizado = intent.getBooleanExtra(IS_FINALIZADO, false)
+
+        if (isFinalizado) {
+            binding.toolbarVoltar.btnEdit.visibility = View.GONE
         }
     }
 
@@ -76,11 +89,15 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
             tvDescricao.text = anuncio.descricao
             tvPrazo.text = "Prazo: ${anuncio.prazo}"
         }
-        when (setPrioridade(anuncio.prazo!!)) {
-            in 0..7 -> binding.tvPrioridade.text = "Prioridade: Alta"
-            in 8..14 -> binding.tvPrioridade.text = "Prioridade: Média"
-            else -> binding.tvPrioridade.text = "Prioridade: Baixa"
+
+        if (!isFinalizado) {
+            when (setPrioridade(anuncio.prazo!!)) {
+                in 0..7 -> binding.tvPrioridade.text = "Prioridade: Alta"
+                in 8..14 -> binding.tvPrioridade.text = "Prioridade: Média"
+                else -> binding.tvPrioridade.text = "Prioridade: Baixa"
+            }
         }
+
         this.anuncio = anuncio
     }
 
@@ -96,7 +113,12 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
         anuncio.checkList.forEachIndexed { index, valor ->
             CheckBox(this@DetalhesAnuncioActivity).apply {
                 id = index
-                isChecked = valor
+                if (isFinalizado) {
+                    isChecked = true
+                    isClickable = false
+                } else {
+                    isChecked = valor
+                }
                 minWidth = 60
                 minHeight = 60
                 text = anuncio.tarefas[index]
@@ -105,10 +127,13 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
                 setTextColor(Color.parseColor("#FFC300"))
                 binding.llCheckout.addView(this)
 
-                setOnClickListener {
-                    anuncio.checkList[index] = isChecked
-                    verificaCheckList(index)
+                if (!isFinalizado) {
+                    setOnClickListener {
+                        anuncio.checkList[index] = isChecked
+                        verificaCheckList(index)
+                    }
                 }
+
             }
         }
     }

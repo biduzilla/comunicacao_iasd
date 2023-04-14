@@ -26,6 +26,7 @@ drawable btn_press_rounded_azul
 drawable ic_add
 drawable ic_back
 drawable ic_edit
+drawable ic_finalizado
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_sad
@@ -80,6 +81,7 @@ layout dialog_verificacao_task
 layout fragment_anuncio_finalizado
 layout fragment_anuncio_tarefas
 layout item_anuncio
+layout item_anuncio_finalizado
 layout toolbar_voltar
 layout toolbar_voltar_edit
 menu menu_anuncios

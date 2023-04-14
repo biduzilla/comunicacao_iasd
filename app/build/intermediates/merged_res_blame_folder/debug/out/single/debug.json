@@ -24,12 +24,16 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\placeholder_verde.xml"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/drawable_ic_finalizado.xml.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/drawable/ic_finalizado.xml"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/drawable_btn_press_circle.xml.flat",
-        "source": "com.toddy.comunicacaodemandas.app-main-55:/drawable/btn_press_circle.xml"
+        "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\drawable_btn_press_circle.xml.flat",
+        "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\btn_press_circle.xml"
     },
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\layout_activity_form_anuncio.xml.flat",
@@ -128,6 +132,10 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\ic_edit.xml"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/layout_item_anuncio_finalizado.xml.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/layout/item_anuncio_finalizado.xml"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\layout_dialog_calendar.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\layout\\dialog_calendar.xml"
     },
@@ -160,10 +168,6 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\layout\\fragment_anuncio_tarefas.xml"
     },
     {
-        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/layout_fragment_anuncio_tarefas.xml.flat",
-        "source": "com.toddy.comunicacaodemandas.app-main-55:/layout/fragment_anuncio_tarefas.xml"
-    },
-    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\font_montserrat.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\font\\montserrat.xml"
     },
@@ -186,6 +190,10 @@
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\font_montserrat_bold.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\font\\montserrat_bold.xml"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/layout_fragment_anuncio_finalizado.xml.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/layout/fragment_anuncio_finalizado.xml"
     },
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\drawable_ic_voltar.xml.flat",

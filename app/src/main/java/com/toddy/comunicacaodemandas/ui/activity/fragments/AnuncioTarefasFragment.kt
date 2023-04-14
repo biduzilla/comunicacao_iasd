@@ -1,19 +1,35 @@
 package com.toddy.comunicacaodemandas.ui.activity.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.toddy.comunicacaodemandas.R
+import androidx.fragment.app.Fragment
+import com.toddy.comunicacaodemandas.databinding.FragmentAnuncioTarefasBinding
+import com.toddy.comunicacaodemandas.extensions.iniciaActivity
+import com.toddy.comunicacaodemandas.ui.activity.FormAnuncioActivity
 
 class AnuncioTarefasFragment : Fragment() {
+
+    private var _binding: FragmentAnuncioTarefasBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_anuncio_tarefas, container, false)
+    ): View {
+        _binding = FragmentAnuncioTarefasBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        configClicks()
+    }
+
+    private fun configClicks() {
+        binding.fabAdd.setOnClickListener {
+            requireActivity().iniciaActivity(FormAnuncioActivity::class.java)
+        }
     }
 }

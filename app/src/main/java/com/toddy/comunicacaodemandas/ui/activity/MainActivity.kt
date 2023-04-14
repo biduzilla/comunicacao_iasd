@@ -23,12 +23,6 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         NavigationUI.setupWithNavController(binding.bottomNavView, navController)
 
-        configClicks()
-    }
 
-    private fun configClicks() {
-        binding.fabAdd.setOnClickListener {
-            iniciaActivity(FormAnuncioActivity::class.java)
-        }
     }
 }

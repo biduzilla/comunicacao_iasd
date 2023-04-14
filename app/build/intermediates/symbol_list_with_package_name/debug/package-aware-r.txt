@@ -3654,6 +3654,9 @@ layout toolbar_voltar
 layout toolbar_voltar_edit
 menu menu_anuncios
 mipmap ic_launcher
+mipmap ic_launcher_comunica
+mipmap ic_launcher_comunica_adaptive_back
+mipmap ic_launcher_comunica_adaptive_fore
 mipmap ic_launcher_round
 navigation nav_graph_anuncios
 plurals mtrl_badge_content_description
@@ -3835,6 +3838,7 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string nenhuma_demanda_finalizada
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

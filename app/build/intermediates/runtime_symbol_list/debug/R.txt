@@ -3653,6 +3653,9 @@ int layout toolbar_voltar 0x7f0d006f
 int layout toolbar_voltar_edit 0x7f0d0072
 int menu menu_anuncios 0x7f0f0000
 int mipmap ic_launcher 0x7f100000
+int mipmap ic_launcher_comunica 0x7f100002
+int mipmap ic_launcher_comunica_adaptive_back 0x7f100003
+int mipmap ic_launcher_comunica_adaptive_fore 0x7f100004
 int mipmap ic_launcher_round 0x7f100001
 int navigation nav_graph_anuncios 0x7f110000
 int plurals mtrl_badge_content_description 0x7f120000
@@ -3834,6 +3837,7 @@ int string mtrl_timepicker_cancel 0x7f1400aa
 int string mtrl_timepicker_confirm 0x7f1400ab
 int string nav_app_bar_navigate_up_description 0x7f1400ac
 int string nav_app_bar_open_drawer_description 0x7f1400ad
+int string nenhuma_demanda_finalizada 0x7f1400c2
 int string password_toggle_content_description 0x7f1400ae
 int string path_password_eye 0x7f1400af
 int string path_password_eye_mask_strike_through 0x7f1400b0

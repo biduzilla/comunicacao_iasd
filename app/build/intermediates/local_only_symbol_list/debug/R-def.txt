@@ -86,6 +86,9 @@ layout toolbar_voltar
 layout toolbar_voltar_edit
 menu menu_anuncios
 mipmap ic_launcher
+mipmap ic_launcher_comunica
+mipmap ic_launcher_comunica_adaptive_back
+mipmap ic_launcher_comunica_adaptive_fore
 mipmap ic_launcher_round
 navigation nav_graph_anuncios
 string anuncios
@@ -103,6 +106,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hello_blank_fragment
+string nenhuma_demanda_finalizada
 string prazo
 string project_id
 string salvar

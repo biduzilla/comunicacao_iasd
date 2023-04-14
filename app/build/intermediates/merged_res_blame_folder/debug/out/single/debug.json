@@ -20,24 +20,44 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\btn_press_rounded_azul.xml"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xxxhdpi_ic_launcher_comunica.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xxxhdpi/ic_launcher_comunica.png"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\drawable_placeholder_verde.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\placeholder_verde.xml"
     },
     {
-        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/drawable_ic_finalizado.xml.flat",
-        "source": "com.toddy.comunicacaodemandas.app-main-55:/drawable/ic_finalizado.xml"
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xxxhdpi_ic_launcher_comunica_adaptive_back.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xxxhdpi/ic_launcher_comunica_adaptive_back.png"
     },
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xhdpi_ic_launcher_comunica_adaptive_back.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xhdpi/ic_launcher_comunica_adaptive_back.png"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\drawable_btn_press_circle.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\btn_press_circle.xml"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-anydpi-v26_ic_launcher_comunica.xml.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-anydpi-v26/ic_launcher_comunica.xml"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\layout_activity_form_anuncio.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\layout\\activity_form_anuncio.xml"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-mdpi_ic_launcher_comunica_adaptive_fore.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-mdpi/ic_launcher_comunica_adaptive_fore.png"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-hdpi_ic_launcher_comunica_adaptive_back.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-hdpi/ic_launcher_comunica_adaptive_back.png"
     },
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\font_montserrat_medium.xml.flat",
@@ -84,6 +104,10 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-mdpi_ic_launcher_comunica.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-mdpi/ic_launcher_comunica.png"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -100,8 +124,16 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\navigation\\nav_graph_anuncios.xml"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xxhdpi_ic_launcher_comunica_adaptive_back.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xxhdpi/ic_launcher_comunica_adaptive_back.png"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-hdpi_ic_launcher_comunica.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-hdpi/ic_launcher_comunica.png"
     },
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\layout_item_anuncio.xml.flat",
@@ -120,6 +152,10 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\layout\\toolbar_voltar_edit.xml"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-mdpi_ic_launcher_comunica_adaptive_back.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-mdpi/ic_launcher_comunica_adaptive_back.png"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-pngs-48:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
@@ -132,12 +168,12 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\ic_edit.xml"
     },
     {
-        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/layout_item_anuncio_finalizado.xml.flat",
-        "source": "com.toddy.comunicacaodemandas.app-main-55:/layout/item_anuncio_finalizado.xml"
-    },
-    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\layout_dialog_calendar.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\layout\\dialog_calendar.xml"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xxhdpi_ic_launcher_comunica.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xxhdpi/ic_launcher_comunica.png"
     },
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\drawable_ic_tasks.xml.flat",
@@ -156,8 +192,28 @@
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\ic_back.xml"
     },
     {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xxxhdpi_ic_launcher_comunica_adaptive_fore.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xxxhdpi/ic_launcher_comunica_adaptive_fore.png"
+    },
+    {
+        "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\drawable_ic_finalizado.xml.flat",
+        "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\ic_finalizado.xml"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xhdpi_ic_launcher_comunica_adaptive_fore.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xhdpi/ic_launcher_comunica_adaptive_fore.png"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xhdpi_ic_launcher_comunica.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xhdpi/ic_launcher_comunica.png"
+    },
+    {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-xxhdpi_ic_launcher_comunica_adaptive_fore.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-xxhdpi/ic_launcher_comunica_adaptive_fore.png"
     },
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
@@ -198,5 +254,13 @@
     {
         "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\drawable_ic_voltar.xml.flat",
         "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\drawable\\ic_voltar.xml"
+    },
+    {
+        "merged": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-merged_res-53:\\layout_item_anuncio_finalizado.xml.flat",
+        "source": "C:\\Users\\lhcteles\\.gradle\\daemon\\7.4\\com.toddy.comunicacaodemandas.app-main-55:\\layout\\item_anuncio_finalizado.xml"
+    },
+    {
+        "merged": "com.toddy.comunicacaodemandas.app-merged_res-53:/mipmap-hdpi_ic_launcher_comunica_adaptive_fore.png.flat",
+        "source": "com.toddy.comunicacaodemandas.app-main-55:/mipmap-hdpi/ic_launcher_comunica_adaptive_fore.png"
     }
 ]

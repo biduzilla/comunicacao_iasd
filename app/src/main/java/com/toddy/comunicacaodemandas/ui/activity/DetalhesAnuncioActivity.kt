@@ -96,6 +96,8 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
                 in 8..14 -> binding.tvPrioridade.text = "Prioridade: Média"
                 else -> binding.tvPrioridade.text = "Prioridade: Baixa"
             }
+        }else{
+            binding.tvPrioridade.text = "Finalizado :)"
         }
 
         this.anuncio = anuncio

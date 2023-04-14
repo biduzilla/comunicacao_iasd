@@ -124,7 +124,7 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
                 text = anuncio.tarefas[index]
                 textSize = 24f
                 layoutParams = params
-                setTextColor(Color.parseColor("#FFC300"))
+                setTextColor(Color.parseColor("#EBEBD3"))
                 binding.llCheckout.addView(this)
 
                 if (!isFinalizado) {

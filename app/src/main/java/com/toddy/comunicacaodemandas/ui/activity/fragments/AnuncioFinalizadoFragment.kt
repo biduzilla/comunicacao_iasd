@@ -57,7 +57,14 @@ class AnuncioFinalizadoFragment : Fragment() {
                         anuncioFinalizados.add(anuncio)
                 }
                 adapter.atualiza(anuncioFinalizados)
-                binding.rv.visibility = View.VISIBLE
+
+                if (anuncioFinalizados.isEmpty()){
+                    binding.llInfo.visibility = View.VISIBLE
+                    binding.rv.visibility = View.GONE
+                }else{
+                    binding.llInfo.visibility = View.GONE
+                    binding.rv.visibility = View.VISIBLE
+                }
             }
         }
     }

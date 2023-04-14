@@ -13,4 +13,5 @@
     <string name="finalizar_demanda">Deseja finalizar demanda?</string>
     <string name="finalizar">Finalizar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="nenhuma_demanda_finalizada">Nenhuma demanda finalizada</string>
 </resources>

@@ -65,7 +65,15 @@ class AnuncioTarefasFragment : Fragment() {
                         anuncioTarefas.add(anuncio)
                 }
                 adapter.atualiza(anuncioTarefas)
-                binding.rv.visibility = View.VISIBLE
+//                binding.rv.visibility = View.VISIBLE
+
+                if (anuncioTarefas.isEmpty()){
+                    binding.llInfo.visibility = View.VISIBLE
+                    binding.rv.visibility = View.GONE
+                }else{
+                    binding.llInfo.visibility = View.GONE
+                    binding.rv.visibility = View.VISIBLE
+                }
             }
         }
     }

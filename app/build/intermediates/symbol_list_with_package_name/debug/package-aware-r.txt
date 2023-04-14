@@ -2827,6 +2827,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_sad
 drawable ic_search_black_24
 drawable ic_task_finalizada
 drawable ic_tasks
@@ -2903,11 +2904,15 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable placeholder_laranja
+drawable placeholder_verde
+drawable placeholder_vermelho
 drawable rounded
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font montserrat
+font montserrat_bold
 font montserrat_medium
 id ALT
 id BOTTOM_END
@@ -3018,6 +3023,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardView
 id carryVelocity
 id center
 id centerCrop
@@ -3140,6 +3146,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgPrioridade
 id immediateStop
 id included
 id indeterminate
@@ -3161,6 +3168,8 @@ id line3
 id linear
 id listMode
 id list_item
+id ll_checkout
+id ll_info
 id locale
 id ltr
 id m3_side_sheet
@@ -3282,6 +3291,7 @@ id right_side
 id rounded
 id row_index_key
 id rtl
+id rv
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3407,7 +3417,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_descricao
+id tv_prazo
+id tv_prioridade
 id tv_titulo
+id tv_titulo_anuncio
 id unchecked
 id uniform
 id unlabeled
@@ -3540,6 +3554,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detalhes_anuncio
 layout activity_form_anuncio
 layout activity_main
 layout custom_dialog
@@ -3561,6 +3576,7 @@ layout design_text_input_start_icon
 layout dialog_calendar
 layout fragment_anuncio_finalizado
 layout fragment_anuncio_tarefas
+layout item_anuncio
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3690,6 +3706,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
 string descricao
+string empty_anuncio
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

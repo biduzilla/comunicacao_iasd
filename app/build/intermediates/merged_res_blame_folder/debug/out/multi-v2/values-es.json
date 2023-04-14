@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.toddy.comunicacaodemandas.app-mergeDebugResources-47:/values-es/values-es.xml",
+            "outputFile": "com.toddy.comunicacaodemandas.app-mergeDebugResources-51:/values-es/values-es.xml",
             "map": [
                 {
                     "source": "C:\\Users\\lhcteles\\.gradle\\caches\\transforms-3\\9c4a2d89e22a7b1e6685826ab4643188\\transformed\\play-services-base-18.0.1\\res\\values-es\\values.xml",

@@ -1,18 +1,13 @@
 package com.toddy.comunicacaodemandas.ui.activity
 
-import android.app.Activity
 import android.app.DatePickerDialog
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import androidx.appcompat.app.AlertDialog
-import com.toddy.comunicacaodemandas.R
-import com.toddy.comunicacaodemandas.dao.AnuncioDao
+import com.toddy.comunicacaodemandas.webClient.AnuncioFirebase
 import com.toddy.comunicacaodemandas.databinding.ActivityFormAnuncioBinding
-import com.toddy.comunicacaodemandas.databinding.DialogCalendarBinding
 import com.toddy.comunicacaodemandas.extensions.Toast
 import com.toddy.comunicacaodemandas.modelo.Anuncio
 import java.text.SimpleDateFormat
@@ -77,7 +72,7 @@ class FormAnuncioActivity : AppCompatActivity() {
                         }
                     }
 
-                    AnuncioDao().salvarAnuncio(anuncio = anuncio!!, this@FormAnuncioActivity, this)
+                    AnuncioFirebase().salvarAnuncio(anuncio = anuncio!!, this@FormAnuncioActivity, this)
                 }
             }
         }
@@ -110,10 +105,21 @@ class FormAnuncioActivity : AppCompatActivity() {
         val month = myCalendar.get(Calendar.MONTH)
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
 
+
+
         val dpd = DatePickerDialog(
             this, { _, selectedYear, selectedMonth, selectedDayOfMonth ->
-                dataSelecionada = "$selectedDayOfMonth/${selectedMonth + 1}/$selectedYear"
-                binding.btnDatePicker.text = dataSelecionada
+//                dataSelecionada = "$selectedDayOfMonth/${selectedMonth + 1}/$selectedYear"
+//                binding.btnDatePicker.text = dataSelecionada
+
+                myCalendar.set(Calendar.YEAR, selectedYear)
+                myCalendar.set(Calendar.MONTH, selectedMonth)
+                myCalendar.set(Calendar.DAY_OF_MONTH, selectedDayOfMonth)
+
+                val myFormat = "dd/MM/yyyy" // mention the format you need
+                val sdf = SimpleDateFormat(myFormat, Locale.US)
+                dataSelecionada = sdf.format(myCalendar.time)
+                binding.btnDatePicker.text = sdf.format(myCalendar.time)
 
             },
             year, month, day

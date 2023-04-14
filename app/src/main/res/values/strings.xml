@@ -9,4 +9,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="anuncios">Anúncios</string>
     <string name="finalizados">Finalizados</string>
+    <string name="empty_anuncio">Não foi cadastrado nenhum anúncio</string>
 </resources>

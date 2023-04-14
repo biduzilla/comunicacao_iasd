@@ -32,6 +32,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.ComunicacaoDemandas" >
         <activity
+            android:name="com.toddy.comunicacaodemandas.ui.activity.DetalhesAnuncioActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.toddy.comunicacaodemandas.ui.activity.FormAnuncioActivity"
             android:exported="false" >
             <meta-data
@@ -105,6 +112,11 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
     </application>
 
 </manifest>

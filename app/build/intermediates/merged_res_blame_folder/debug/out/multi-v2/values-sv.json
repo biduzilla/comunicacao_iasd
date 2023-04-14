@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.toddy.comunicacaodemandas.app-mergeDebugResources-47:/values-sv/values-sv.xml",
+            "outputFile": "com.toddy.comunicacaodemandas.app-mergeDebugResources-51:/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\lhcteles\\.gradle\\caches\\transforms-3\\9d64dedd185ec454abd2312844bec8eb\\transformed\\material-1.8.0\\res\\values-sv\\values-sv.xml",

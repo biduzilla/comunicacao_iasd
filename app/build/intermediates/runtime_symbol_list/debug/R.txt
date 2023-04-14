@@ -1987,6 +1987,7 @@ int color tooltip_background_dark 0x7f060292
 int color tooltip_background_light 0x7f060293
 int color white 0x7f060294
 int color yale_blue 0x7f060295
+int color yale_blue_light 0x7f060296
 int dimen abc_action_bar_content_inset_material 0x7f070000
 int dimen abc_action_bar_content_inset_with_nav 0x7f070001
 int dimen abc_action_bar_default_height_material 0x7f070002
@@ -2781,6 +2782,7 @@ int drawable btn_checkbox_unchecked_mtrl 0x7f08007c
 int drawable btn_checkbox_unchecked_to_checked_mtrl_animation 0x7f08007d
 int drawable btn_press 0x7f08007e
 int drawable btn_press_rounded 0x7f08007f
+int drawable btn_press_rounded_azul 0x7f080101
 int drawable btn_radio_off_mtrl 0x7f080080
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f080081
 int drawable btn_radio_on_mtrl 0x7f080082
@@ -3015,7 +3017,9 @@ int id bounce 0x7f0a0062
 int id bounceBoth 0x7f0a0063
 int id bounceEnd 0x7f0a0064
 int id bounceStart 0x7f0a0065
+int id btnCancelar 0x7f0a0216
 int id btnDatePicker 0x7f0a0066
+int id btnFinalizar 0x7f0a0219
 int id btn_salvar 0x7f0a0067
 int id btn_voltar 0x7f0a0068
 int id buttonPanel 0x7f0a0069
@@ -3165,6 +3169,7 @@ int id light 0x7f0a00f7
 int id line1 0x7f0a00f8
 int id line3 0x7f0a00f9
 int id linear 0x7f0a00fa
+int id linearLayout4 0x7f0a0217
 int id listMode 0x7f0a00fb
 int id list_item 0x7f0a00fc
 int id ll_checkout 0x7f0a0211
@@ -3390,6 +3395,7 @@ int id textSpacerNoButtons 0x7f0a01d7
 int id textSpacerNoTitle 0x7f0a01d8
 int id textStart 0x7f0a01d9
 int id textTop 0x7f0a01da
+int id textView2 0x7f0a0218
 int id text_input_end_icon 0x7f0a01db
 int id text_input_error_icon 0x7f0a01dc
 int id text_input_start_icon 0x7f0a01dd
@@ -3573,6 +3579,7 @@ int layout design_navigation_menu_item 0x7f0d002b
 int layout design_text_input_end_icon 0x7f0d002c
 int layout design_text_input_start_icon 0x7f0d002d
 int layout dialog_calendar 0x7f0d002e
+int layout dialog_verificacao_task 0x7f0d0071
 int layout fragment_anuncio_finalizado 0x7f0d002f
 int layout fragment_anuncio_tarefas 0x7f0d0030
 int layout item_anuncio 0x7f0d0031
@@ -3681,6 +3688,7 @@ int string bottomsheet_action_expand 0x7f140021
 int string bottomsheet_action_expand_halfway 0x7f140022
 int string bottomsheet_drag_handle_clicked 0x7f140023
 int string bottomsheet_drag_handle_content_description 0x7f140024
+int string cancelar 0x7f1400bf
 int string character_counter_content_description 0x7f140025
 int string character_counter_overflowed_content_description 0x7f140026
 int string character_counter_pattern 0x7f140027
@@ -3712,6 +3720,8 @@ int string exposed_dropdown_menu_content_description 0x7f140040
 int string fab_transformation_scrim_behavior 0x7f140041
 int string fab_transformation_sheet_behavior 0x7f140042
 int string finalizados 0x7f140043
+int string finalizar 0x7f1400c0
+int string finalizar_demanda 0x7f1400c1
 int string gcm_defaultSenderId 0x7f140044
 int string google_api_key 0x7f140045
 int string google_app_id 0x7f140046

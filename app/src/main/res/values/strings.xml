@@ -10,4 +10,7 @@
     <string name="anuncios">Anúncios</string>
     <string name="finalizados">Finalizados</string>
     <string name="empty_anuncio">Não foi cadastrado nenhum anúncio</string>
+    <string name="finalizar_demanda">Deseja finalizar demanda?</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

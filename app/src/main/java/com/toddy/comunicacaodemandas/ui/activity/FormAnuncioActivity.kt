@@ -66,13 +66,21 @@ class FormAnuncioActivity : AppCompatActivity() {
                     anuncio!!.tarefas = tarefas.split("-").toMutableList()
                     anuncio!!.prazo = dataSelecionada
 
+                    repeat(anuncio!!.tarefas.size) {
+                        anuncio!!.checkList.add(false)
+                    }
+
                     anuncio!!.tarefas.forEach {
                         if (it.isEmpty()) {
                             anuncio!!.tarefas.remove(it)
                         }
                     }
 
-                    AnuncioFirebase().salvarAnuncio(anuncio = anuncio!!, this@FormAnuncioActivity, this)
+                    AnuncioFirebase().salvarAnuncio(
+                        anuncio = anuncio!!,
+                        this@FormAnuncioActivity,
+                        this
+                    )
                 }
             }
         }
@@ -104,7 +112,6 @@ class FormAnuncioActivity : AppCompatActivity() {
         val year = myCalendar.get(Calendar.YEAR)
         val month = myCalendar.get(Calendar.MONTH)
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
-
 
 
         val dpd = DatePickerDialog(

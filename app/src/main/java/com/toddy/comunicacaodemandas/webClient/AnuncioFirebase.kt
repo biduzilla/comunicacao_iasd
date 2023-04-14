@@ -14,19 +14,26 @@ import com.toddy.comunicacaodemandas.modelo.Anuncio
 import com.toddy.comunicacaodemandas.ui.activity.DetalhesAnuncioActivity
 
 class AnuncioFirebase {
-    fun salvarAnuncio(anuncio: Anuncio, activity: Activity, binding: ActivityFormAnuncioBinding) {
+    fun salvarAnuncio(
+        anuncio: Anuncio,
+        activity: Activity? = null,
+        binding: ActivityFormAnuncioBinding? = null
+    ) {
 
         FirebaseDatabase.getInstance().reference
             .child("anuncios")
             .child(anuncio.id)
             .setValue(anuncio)
             .addOnCompleteListener {
-                activity.finish()
-            }.addOnFailureListener {
-                binding.btnSalvar.visibility = View.VISIBLE
-                binding.progressBar.visibility = View.GONE
+                activity?.finish()
 
-                Toast(activity.baseContext, "Error ao salvar anúncio!")
+            }.addOnFailureListener {
+                binding?.let {
+                    it.btnSalvar.visibility = View.VISIBLE
+                    it.progressBar.visibility = View.GONE
+                }
+                activity?.let { Toast(it.baseContext, "Error ao salvar anúncio!") }
+
             }
     }
 

@@ -14,6 +14,7 @@ data class Anuncio(
     var titulo: String? = "",
     var descricao: String? = "",
     var tarefas: MutableList<String> = mutableListOf(),
+    var checkList: MutableList<Boolean> = mutableListOf(),
     var prazo: String? = "",
     var prioridade: Int? = 0,
     var finalizado: Boolean = false,

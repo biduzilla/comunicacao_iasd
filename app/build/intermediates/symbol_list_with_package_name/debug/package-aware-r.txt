@@ -1988,6 +1988,7 @@ color tooltip_background_dark
 color tooltip_background_light
 color white
 color yale_blue
+color yale_blue_light
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -2782,6 +2783,7 @@ drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
 drawable btn_press
 drawable btn_press_rounded
+drawable btn_press_rounded_azul
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -3016,7 +3018,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnCancelar
 id btnDatePicker
+id btnFinalizar
 id btn_salvar
 id btn_voltar
 id buttonPanel
@@ -3166,6 +3170,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout4
 id listMode
 id list_item
 id ll_checkout
@@ -3391,6 +3396,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3574,6 +3580,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_calendar
+layout dialog_verificacao_task
 layout fragment_anuncio_finalizado
 layout fragment_anuncio_tarefas
 layout item_anuncio
@@ -3682,6 +3689,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string cancelar
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3713,6 +3721,8 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string finalizados
+string finalizar
+string finalizar_demanda
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

@@ -33,12 +33,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yale_blue">#003566</color>
+    <color name="yale_blue_light">#175B9A</color>
     <string name="anuncios">Anúncios</string>
     <string name="app_name">Comunica</string>
+    <string name="cancelar">Cancelar</string>
     <string name="default_web_client_id" translatable="false">541441121252-uol5t7l9462q4ivc9r0bkh1vrdq5tppq.apps.googleusercontent.com</string>
     <string name="descricao">Descricão</string>
     <string name="empty_anuncio">Não foi cadastrado nenhum anúncio</string>
     <string name="finalizados">Finalizados</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="finalizar_demanda">Deseja finalizar demanda?</string>
     <string name="gcm_defaultSenderId" translatable="false">541441121252</string>
     <string name="google_api_key" translatable="false">AIzaSyDD4dPR2xyGGvrELrBDuzvDoCQ05scHSn0</string>
     <string name="google_app_id" translatable="false">1:541441121252:android:deae7e2234f76303f945f1</string>

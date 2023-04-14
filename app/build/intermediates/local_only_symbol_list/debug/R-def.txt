@@ -18,8 +18,10 @@ color teal_200
 color teal_700
 color white
 color yale_blue
+color yale_blue_light
 drawable btn_press
 drawable btn_press_rounded
+drawable btn_press_rounded_azul
 drawable ic_add
 drawable ic_back
 drawable ic_launcher_background
@@ -37,7 +39,9 @@ font montserrat
 font montserrat_bold
 font montserrat_medium
 id bottom_nav_view
+id btnCancelar
 id btnDatePicker
+id btnFinalizar
 id btn_salvar
 id btn_voltar
 id cardView
@@ -47,6 +51,7 @@ id edtTarefas
 id edtTitulo
 id fab_add
 id imgPrioridade
+id linearLayout4
 id ll_checkout
 id ll_info
 id menu_task
@@ -57,6 +62,7 @@ id progress_bar
 id rv
 id scrollView
 id scrollView2
+id textView2
 id toolbar_voltar
 id tv_descricao
 id tv_prazo
@@ -67,6 +73,7 @@ layout activity_detalhes_anuncio
 layout activity_form_anuncio
 layout activity_main
 layout dialog_calendar
+layout dialog_verificacao_task
 layout fragment_anuncio_finalizado
 layout fragment_anuncio_tarefas
 layout item_anuncio
@@ -77,10 +84,13 @@ mipmap ic_launcher_round
 navigation nav_graph_anuncios
 string anuncios
 string app_name
+string cancelar
 string default_web_client_id
 string descricao
 string empty_anuncio
 string finalizados
+string finalizar
+string finalizar_demanda
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

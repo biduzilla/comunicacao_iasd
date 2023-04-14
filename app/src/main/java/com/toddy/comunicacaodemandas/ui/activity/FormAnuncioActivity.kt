@@ -98,6 +98,10 @@ class FormAnuncioActivity : AppCompatActivity() {
             ocultarTeclado()
             verificaDados()
         }
+
+        binding.toolbarVoltar.btnVoltar.setOnClickListener {
+            finish()
+        }
     }
 
     private fun abrirCalendario() {

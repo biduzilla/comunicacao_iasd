@@ -32,14 +32,17 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <color name="yale_blue">#003566</color>
-    <string name="app_name">ComunicacaoDemandas</string>
+    <string name="anuncios">Anúncios</string>
+    <string name="app_name">Comunica Iasd</string>
     <string name="default_web_client_id" translatable="false">541441121252-uol5t7l9462q4ivc9r0bkh1vrdq5tppq.apps.googleusercontent.com</string>
     <string name="descricao">Descricão</string>
+    <string name="finalizados">Finalizados</string>
     <string name="gcm_defaultSenderId" translatable="false">541441121252</string>
     <string name="google_api_key" translatable="false">AIzaSyDD4dPR2xyGGvrELrBDuzvDoCQ05scHSn0</string>
     <string name="google_app_id" translatable="false">1:541441121252:android:deae7e2234f76303f945f1</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDD4dPR2xyGGvrELrBDuzvDoCQ05scHSn0</string>
     <string name="google_storage_bucket" translatable="false">comunica-iasd.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="prazo">Selecione o Prazo</string>
     <string name="project_id" translatable="false">comunica-iasd</string>
     <string name="salvar">Salvar</string>

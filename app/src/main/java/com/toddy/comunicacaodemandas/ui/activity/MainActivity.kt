@@ -6,6 +6,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.toddy.comunicacaodemandas.R
 import com.toddy.comunicacaodemandas.databinding.ActivityMainBinding
+import com.toddy.comunicacaodemandas.extensions.iniciaActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,8 +19,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_graph_anuncios) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
-        NavigationUI.setupWithNavController(binding.bottomNavigationView, navController)
+        NavigationUI.setupWithNavController(binding.bottomNavView, navController)
+
+        configClicks()
+    }
+
+    private fun configClicks() {
+        binding.fabAdd.setOnClickListener {
+            iniciaActivity(FormAnuncioActivity::class.java)
+        }
     }
 }

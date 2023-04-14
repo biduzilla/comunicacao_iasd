@@ -53,41 +53,41 @@
 33        android:theme="@style/Theme.ComunicacaoDemandas" >
 33-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:13:9-57
 34        <activity
-34-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:15:9-27:20
+34-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:15:9-23:20
 35            android:name="com.toddy.comunicacaodemandas.ui.activity.FormAnuncioActivity"
 35-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:16:13-60
-36            android:exported="true" >
-36-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:17:13-36
-37            <intent-filter>
-37-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:19:13-23:29
-38                <action android:name="android.intent.action.MAIN" />
-38-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:20:17-69
-38-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:20:25-66
-39
-40                <category android:name="android.intent.category.LAUNCHER" />
-40-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:22:17-77
-40-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:22:27-74
-41            </intent-filter>
-42
-43            <meta-data
-43-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:24:13-26:36
-44                android:name="android.app.lib_name"
-44-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:25:17-52
-45                android:value="" />
-45-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:26:17-33
-46        </activity>
-47        <activity
-47-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:28:9-36:20
-48            android:name="com.toddy.comunicacaodemandas.ui.activity.MainActivity"
-48-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:29:13-53
-49            android:exported="false" >
-49-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:30:13-37
+36            android:exported="false" >
+36-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:17:13-37
+37            <meta-data
+37-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:20:13-22:36
+38                android:name="android.app.lib_name"
+38-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:21:17-52
+39                android:value="" />
+39-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:22:17-33
+40        </activity>
+41        <activity
+41-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:24:9-36:20
+42            android:name="com.toddy.comunicacaodemandas.ui.activity.MainActivity"
+42-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:25:13-53
+43            android:exported="true" >
+43-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:26:13-36
+44            <intent-filter>
+44-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:28:13-32:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:29:17-69
+45-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:29:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:31:17-77
+47-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:31:27-74
+48            </intent-filter>
+49
 50            <meta-data
-50-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:24:13-26:36
+50-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:20:13-22:36
 51                android:name="android.app.lib_name"
-51-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:25:17-52
+51-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:21:17-52
 52                android:value="" />
-52-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:26:17-33
+52-->C:\Users\lhcteles\AndroidStudioProjects\ComunicacaoDemandas\app\src\main\AndroidManifest.xml:22:17-33
 53        </activity>
 54
 55        <meta-data

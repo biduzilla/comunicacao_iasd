@@ -7,8 +7,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.toddy.comunicacaodemandas.R;
 import java.lang.NullPointerException;
@@ -20,12 +22,21 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final BottomNavigationView bottomNavView;
+
+  @NonNull
   public final FloatingActionButton fabAdd;
 
+  @NonNull
+  public final FragmentContainerView navHostFragment;
+
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton fabAdd) {
+      @NonNull BottomNavigationView bottomNavView, @NonNull FloatingActionButton fabAdd,
+      @NonNull FragmentContainerView navHostFragment) {
     this.rootView = rootView;
+    this.bottomNavView = bottomNavView;
     this.fabAdd = fabAdd;
+    this.navHostFragment = navHostFragment;
   }
 
   @Override
@@ -55,13 +66,26 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottom_nav_view;
+      BottomNavigationView bottomNavView = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavView == null) {
+        break missingId;
+      }
+
       id = R.id.fab_add;
       FloatingActionButton fabAdd = ViewBindings.findChildViewById(rootView, id);
       if (fabAdd == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, fabAdd);
+      id = R.id.nav_host_fragment;
+      FragmentContainerView navHostFragment = ViewBindings.findChildViewById(rootView, id);
+      if (navHostFragment == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, bottomNavView, fabAdd,
+          navHostFragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

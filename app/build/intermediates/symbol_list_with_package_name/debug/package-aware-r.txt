@@ -2782,6 +2782,7 @@ drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
 drawable btn_press
+drawable btn_press_circle
 drawable btn_press_rounded
 drawable btn_press_rounded_azul
 drawable btn_radio_off_mtrl
@@ -2819,6 +2820,7 @@ drawable ic_arrow_back_black_24
 drawable ic_back
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_edit
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3021,6 +3023,7 @@ id bounceStart
 id btnCancelar
 id btnDatePicker
 id btnFinalizar
+id btn_edit
 id btn_salvar
 id btn_voltar
 id buttonPanel
@@ -3646,6 +3649,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout toolbar_voltar
+layout toolbar_voltar_edit
 menu menu_anuncios
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import com.toddy.comunicacaodemandas.ID_ANUNCIO
+import com.toddy.comunicacaodemandas.database.dao.AnuncioDao
 import com.toddy.comunicacaodemandas.webClient.AnuncioFirebase
 import com.toddy.comunicacaodemandas.databinding.ActivityFormAnuncioBinding
 import com.toddy.comunicacaodemandas.extensions.Toast
@@ -21,6 +23,7 @@ class FormAnuncioActivity : AppCompatActivity() {
 
     private var dataSelecionada: String? = null
     private var anuncio: Anuncio? = null
+    private var isUpdate = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +31,41 @@ class FormAnuncioActivity : AppCompatActivity() {
 
         binding.toolbarVoltar.tvTitulo.text = "Salvar Anúncio"
         configClicks()
+        verificaUpdate()
     }
+
+    private fun verificaUpdate() {
+        val idAnuncio = intent.getStringExtra(ID_ANUNCIO)
+
+        idAnuncio?.let {
+            binding.toolbarVoltar.tvTitulo.text = "Atualizar Anúncio"
+            binding.btnSalvar.text = "Atualizar"
+
+            AnuncioFirebase().recuperaAnuncioById(idAnuncio) { anuncioRecuperado ->
+                anuncioRecuperado?.let { anuncio ->
+                    this.anuncio = anuncio
+                    dataSelecionada = anuncio.prazo
+                    isUpdate = true
+
+                    preencheDados(anuncio)
+                }
+
+            }
+        }
+    }
+
+    private fun preencheDados(anuncio: Anuncio) {
+        with(binding) {
+            edtTitulo.setText(anuncio.titulo)
+            edtDesc.setText(anuncio.descricao)
+            edtTarefas.setText(
+                anuncio.tarefas.toString().replace("[", "").replace("]", "")
+                    .replace(",", "-")
+            )
+            btnDatePicker.text = anuncio.prazo
+        }
+    }
+
 
     private fun verificaDados() {
 
@@ -66,8 +103,10 @@ class FormAnuncioActivity : AppCompatActivity() {
                     anuncio!!.tarefas = tarefas.split("-").toMutableList()
                     anuncio!!.prazo = dataSelecionada
 
-                    repeat(anuncio!!.tarefas.size) {
-                        anuncio!!.checkList.add(false)
+                    if (!isUpdate) {
+                        repeat(anuncio!!.tarefas.size) {
+                            anuncio!!.checkList.add(false)
+                        }
                     }
 
                     anuncio!!.tarefas.forEach {

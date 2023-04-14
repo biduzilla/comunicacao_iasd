@@ -1,18 +1,16 @@
 package com.toddy.comunicacaodemandas.ui.activity
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.toddy.comunicacaodemandas.ID_ANUNCIO
 import com.toddy.comunicacaodemandas.databinding.ActivityDetalhesAnuncioBinding
 import com.toddy.comunicacaodemandas.databinding.DialogVerificacaoTaskBinding
-import com.toddy.comunicacaodemandas.extensions.Toast
 import com.toddy.comunicacaodemandas.modelo.Anuncio
 import com.toddy.comunicacaodemandas.utils.setPrioridade
 import com.toddy.comunicacaodemandas.webClient.AnuncioFirebase
@@ -30,14 +28,26 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.toolbarVoltar.tvTitulo.text = "Detalhes da Demanda"
-        tentaCarregarAnuncio()
+        binding.toolbarVoltar.tvTitulo.text = "Demanda"
         configClicks()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        binding.llCheckout.removeAllViews()
+        tentaCarregarAnuncio()
     }
 
     private fun configClicks() {
         binding.toolbarVoltar.btnVoltar.setOnClickListener {
             salvarFechar()
+        }
+        binding.toolbarVoltar.btnEdit.setOnClickListener {
+            AnuncioFirebase().salvarAnuncio(anuncio)
+            Intent(this, FormAnuncioActivity::class.java).apply {
+                putExtra(ID_ANUNCIO, anuncio.id)
+                startActivity(this)
+            }
         }
     }
 
@@ -50,7 +60,7 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
     private fun tentaCarregarAnuncio() {
         val anuncioId = intent.getStringExtra(ID_ANUNCIO)
         anuncioId?.let {
-            AnuncioFirebase().recuperaAnuncioById(binding, it) { anuncioRecuperado ->
+            AnuncioFirebase().recuperaAnuncioById(it, binding) { anuncioRecuperado ->
                 anuncioRecuperado?.let { anuncio ->
                     carregaDados(anuncio)
                     gerarCheckList()
@@ -111,14 +121,15 @@ class DetalhesAnuncioActivity : AppCompatActivity() {
             dialog.show()
 
             btnFinalizar.setOnClickListener {
+                anuncio.finalizado = true
                 salvarFechar()
             }
 
             btnCancelar.setOnClickListener {
                 anuncio.checkList[index] = false
                 binding.llCheckout.removeAllViews()
-                gerarCheckList()
 
+                gerarCheckList()
                 dialog.dismiss()
             }
         }

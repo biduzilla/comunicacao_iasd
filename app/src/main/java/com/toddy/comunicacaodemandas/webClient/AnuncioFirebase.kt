@@ -60,8 +60,8 @@ class AnuncioFirebase {
     }
 
     fun recuperaAnuncioById(
-        binding: ActivityDetalhesAnuncioBinding,
         idAnuncio: String,
+        binding: ActivityDetalhesAnuncioBinding? = null,
         anunciosRecuperados: (anuncioRecuperado: Anuncio?) -> Unit
     ) {
         val anuncios = mutableListOf<Anuncio>()
@@ -73,10 +73,13 @@ class AnuncioFirebase {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     if (snapshot.exists()) {
                         anunciosRecuperados(snapshot.getValue(Anuncio::class.java))
-                        with(binding) {
-                            progressBar.visibility = View.GONE
-                            scrollView.visibility = View.VISIBLE
+                        binding?.let {
+                            with(it) {
+                                progressBar.visibility = View.GONE
+                                scrollView.visibility = View.VISIBLE
+                            }
                         }
+
                     }
                 }
 

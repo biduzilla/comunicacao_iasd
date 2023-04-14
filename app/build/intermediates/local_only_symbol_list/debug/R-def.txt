@@ -20,10 +20,12 @@ color white
 color yale_blue
 color yale_blue_light
 drawable btn_press
+drawable btn_press_circle
 drawable btn_press_rounded
 drawable btn_press_rounded_azul
 drawable ic_add
 drawable ic_back
+drawable ic_edit
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_sad
@@ -42,6 +44,7 @@ id bottom_nav_view
 id btnCancelar
 id btnDatePicker
 id btnFinalizar
+id btn_edit
 id btn_salvar
 id btn_voltar
 id cardView
@@ -78,6 +81,7 @@ layout fragment_anuncio_finalizado
 layout fragment_anuncio_tarefas
 layout item_anuncio
 layout toolbar_voltar
+layout toolbar_voltar_edit
 menu menu_anuncios
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -60,17 +60,21 @@
         tools:listitem="@layout/item_anuncio"
         tools:visibility="visible" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+    <ImageButton
         android:id="@+id/fab_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_margin="16dp"
-        android:clickable="true"
-        android:focusable="true"
+        android:background="@drawable/btn_press_circle"
+        android:fontFamily="@font/montserrat_medium"
         android:src="@drawable/ic_add"
+        app:tint="@color/yale_blue"
+        android:textAllCaps="false"
+        android:textColor="@color/yale_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@color/orford_blue"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

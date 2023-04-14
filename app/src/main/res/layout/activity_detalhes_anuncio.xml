@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/toolbar_voltar"
-        layout="@layout/toolbar_voltar"
+        layout="@layout/toolbar_voltar_edit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -81,9 +81,9 @@
                         tools:text="Descricao" />
 
                     <LinearLayout
+                        android:layout_marginVertical="16dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="16dp"
                         android:orientation="horizontal">
 
                         <TextView

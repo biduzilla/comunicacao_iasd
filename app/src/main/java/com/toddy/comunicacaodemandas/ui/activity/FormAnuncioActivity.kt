@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.toddy.comunicacaodemandas.ID_ANUNCIO
-import com.toddy.comunicacaodemandas.database.dao.AnuncioDao
 import com.toddy.comunicacaodemandas.webClient.AnuncioFirebase
 import com.toddy.comunicacaodemandas.databinding.ActivityFormAnuncioBinding
 import com.toddy.comunicacaodemandas.extensions.Toast
@@ -96,22 +95,28 @@ class FormAnuncioActivity : AppCompatActivity() {
                     btnSalvar.visibility = View.GONE
                     progressBar.visibility = View.VISIBLE
 
-                    if (anuncio == null) anuncio = Anuncio()
-
-                    anuncio!!.titulo = titulo
-                    anuncio!!.descricao = descricao
-                    anuncio!!.tarefas = tarefas.split("-").toMutableList()
-                    anuncio!!.prazo = dataSelecionada
-
-                    if (!isUpdate) {
+                    if (anuncio == null) {
+                        anuncio = Anuncio()
                         repeat(anuncio!!.tarefas.size) {
                             anuncio!!.checkList.add(false)
                         }
                     }
 
-                    anuncio!!.tarefas.forEach {
-                        if (it.isEmpty()) {
-                            anuncio!!.tarefas.remove(it)
+                    val tarefasLst = tarefas.split("-").toMutableList()
+
+                    tarefasLst.forEachIndexed { index, tarefa ->
+                        tarefasLst[index] = tarefa.trimStart()
+                    }
+
+                    anuncio!!.titulo = titulo
+                    anuncio!!.descricao = descricao
+
+                    anuncio!!.tarefas = tarefasLst
+                    anuncio!!.prazo = dataSelecionada
+
+                    if (tarefasLst.size != anuncio!!.checkList.size){
+                        repeat(tarefasLst.size-anuncio!!.checkList.size){
+                            anuncio!!.checkList.add(false)
                         }
                     }
 
@@ -167,9 +172,11 @@ class FormAnuncioActivity : AppCompatActivity() {
                 dataSelecionada = sdf.format(myCalendar.time)
                 binding.btnDatePicker.text = sdf.format(myCalendar.time)
 
+
             },
             year, month, day
         )
+        dpd.datePicker.minDate = System.currentTimeMillis() - 1000;
         dpd.show()
     }
 }

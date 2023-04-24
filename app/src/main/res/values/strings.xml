@@ -14,4 +14,8 @@
     <string name="finalizar">Finalizar</string>
     <string name="cancelar">Cancelar</string>
     <string name="nenhuma_demanda_finalizada">Nenhuma demanda finalizada</string>
+    <string name="comunica_app">Comunica App</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>

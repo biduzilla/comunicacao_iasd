@@ -2070,6 +2070,10 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+dimen appbar_padding
+dimen appbar_padding_top
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -2133,6 +2137,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -2838,6 +2843,7 @@ drawable ic_task_finalizada
 drawable ic_tasks
 drawable ic_voltar
 drawable item_selected
+drawable logo
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -2914,6 +2920,7 @@ drawable placeholder_verde
 drawable placeholder_vermelho
 drawable rounded
 drawable test_level_drawable
+drawable text_input_box_stroke
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font montserrat
@@ -3567,6 +3574,7 @@ layout abc_tooltip
 layout activity_detalhes_anuncio
 layout activity_form_anuncio
 layout activity_main
+layout activity_splash
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3721,6 +3729,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string comunica_app
 string default_web_client_id
 string descricao
 string empty_anuncio
@@ -3854,7 +3863,13 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string tab_text_1
+string tab_text_2
 string tarefas
+string tedpermission_close
+string tedpermission_confirm
+string tedpermission_setting
+string title_activity_main2
 string titulo
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -3865,6 +3880,7 @@ style Animation_Design_BottomSheetDialog
 style Animation_Material3_BottomSheetDialog
 style Animation_Material3_SideSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppFullScreenTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -4387,6 +4403,9 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_ComunicacaoDemandas
+style Theme_ComunicacaoDemandas_AppBarOverlay
+style Theme_ComunicacaoDemandas_NoActionBar
+style Theme_ComunicacaoDemandas_PopupOverlay
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
@@ -4467,6 +4486,8 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_Splash
+style Theme_Transparent_Permission
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

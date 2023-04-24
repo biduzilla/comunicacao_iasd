@@ -19,6 +19,11 @@ color teal_700
 color white
 color yale_blue
 color yale_blue_light
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+dimen appbar_padding
+dimen appbar_padding_top
+dimen fab_margin
 drawable btn_press
 drawable btn_press_circle
 drawable btn_press_rounded
@@ -34,10 +39,12 @@ drawable ic_task_finalizada
 drawable ic_tasks
 drawable ic_voltar
 drawable item_selected
+drawable logo
 drawable placeholder_laranja
 drawable placeholder_verde
 drawable placeholder_vermelho
 drawable rounded
+drawable text_input_box_stroke
 font montserrat
 font montserrat_bold
 font montserrat_medium
@@ -76,6 +83,7 @@ id tv_titulo_anuncio
 layout activity_detalhes_anuncio
 layout activity_form_anuncio
 layout activity_main
+layout activity_splash
 layout dialog_calendar
 layout dialog_verificacao_task
 layout fragment_anuncio_finalizado
@@ -94,6 +102,7 @@ navigation nav_graph_anuncios
 string anuncios
 string app_name
 string cancelar
+string comunica_app
 string default_web_client_id
 string descricao
 string empty_anuncio
@@ -110,8 +119,16 @@ string nenhuma_demanda_finalizada
 string prazo
 string project_id
 string salvar
+string tab_text_1
+string tab_text_2
 string tarefas
+string title_activity_main2
 string titulo
+style AppFullScreenTheme
 style Theme.ComunicacaoDemandas
+style Theme.ComunicacaoDemandas.AppBarOverlay
+style Theme.ComunicacaoDemandas.NoActionBar
+style Theme.ComunicacaoDemandas.PopupOverlay
+style Theme.Splash
 xml backup_rules
 xml data_extraction_rules

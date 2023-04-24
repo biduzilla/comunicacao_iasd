@@ -46,6 +46,8 @@
                 android:fontFamily="@font/montserrat_bold"
                 android:textColor="@color/yale_blue"
                 android:textSize="26sp"
+                android:maxLines="1"
+                android:ellipsize="end"
                 tools:text="Titulo" />
 
             <TextView

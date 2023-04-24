@@ -46,7 +46,7 @@ class AnuncioFinalizadoFragment : Fragment() {
     }
 
     private fun buscaAnuncios() {
-        binding.progressBar.visibility = View.GONE
+
         AnuncioFirebase().recuperaAnuncios { anunciosList ->
             anunciosList?.let {
                 val anuncioFinalizados = mutableListOf<Anuncio>()
@@ -57,7 +57,7 @@ class AnuncioFinalizadoFragment : Fragment() {
                         anuncioFinalizados.add(anuncio)
                 }
                 adapter.atualiza(anuncioFinalizados)
-
+                binding.progressBar.visibility = View.GONE
                 if (anuncioFinalizados.isEmpty()){
                     binding.llInfo.visibility = View.VISIBLE
                     binding.rv.visibility = View.GONE
@@ -65,6 +65,7 @@ class AnuncioFinalizadoFragment : Fragment() {
                     binding.llInfo.visibility = View.GONE
                     binding.rv.visibility = View.VISIBLE
                 }
+
             }
         }
     }

@@ -64,7 +64,6 @@ class AnuncioFirebase {
         binding: ActivityDetalhesAnuncioBinding? = null,
         anunciosRecuperados: (anuncioRecuperado: Anuncio?) -> Unit
     ) {
-        val anuncios = mutableListOf<Anuncio>()
 
         FirebaseDatabase.getInstance().reference
             .child("anuncios")

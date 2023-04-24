@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.toddy.comunicacaodemandas.app-mergeDebugResources-51:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+            "outputFile": "com.toddy.comunicacaodemandas.app-mergeDebugResources-48:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lhcteles\\.gradle\\caches\\transforms-3\\9d64dedd185ec454abd2312844bec8eb\\transformed\\material-1.8.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\lhcteles\\.gradle\\caches\\transforms-3\\3743de50e1fcf49fb353359ff80167b5\\transformed\\material-1.8.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

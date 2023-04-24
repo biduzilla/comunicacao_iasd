@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.toddy.comunicacaodemandas.app-mergeDebugResources-51:/values-v16/values-v16.xml",
+            "outputFile": "com.toddy.comunicacaodemandas.app-mergeDebugResources-48:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lhcteles\\.gradle\\caches\\transforms-3\\61e069618d6b423984d1aa333c1d05e8\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\lhcteles\\.gradle\\caches\\transforms-3\\8f5d74c6462b920bde2d831ea3674bb0\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\lhcteles\\.gradle\\caches\\transforms-3\\04b2ae8d6f81d35a2567716aaa18ef87\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lhcteles\\.gradle\\caches\\transforms-3\\ae6630eeba4c2f12793bdbf8baa0c290\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

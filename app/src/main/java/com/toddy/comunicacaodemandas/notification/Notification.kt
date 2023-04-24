@@ -1,15 +1,14 @@
 package com.toddy.comunicacaodemandas.notification
 
-import android.app.Activity
 import android.app.NotificationManager
 import android.app.PendingIntent
 import android.app.TaskStackBuilder
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import androidx.core.app.NotificationCompat
 import com.toddy.comunicacaodemandas.R
-import com.toddy.comunicacaodemandas.ui.activity.FormAnuncioActivity
 import com.toddy.comunicacaodemandas.ui.activity.MainActivity
 
 const val notificationID = 1
@@ -35,10 +34,12 @@ class Notification : BroadcastReceiver() {
             .setContentTitle(intent.getStringExtra(titleExtra))
             .setContentText(intent.getStringExtra(messageExtra))
             .setContentIntent(resultPendingIntent)
+            .setVibrate(longArrayOf(1000, 1000, 1000, 1000, 1000))
             .build()
 
         val manager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         manager.notify(notificationID, notification)
+
     }
 
 

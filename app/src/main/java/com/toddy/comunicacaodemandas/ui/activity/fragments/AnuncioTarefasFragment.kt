@@ -47,7 +47,6 @@ class AnuncioTarefasFragment : Fragment() {
     }
 
     private fun buscaAnuncios() {
-
         AnuncioFirebase().recuperaAnuncios { anunciosList ->
             anunciosList?.let {
                 val anuncioTarefas = mutableListOf<Anuncio>()

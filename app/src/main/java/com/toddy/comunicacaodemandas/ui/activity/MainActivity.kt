@@ -4,13 +4,16 @@ import android.app.*
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.toddy.comunicacaodemandas.R
 import com.toddy.comunicacaodemandas.databinding.ActivityMainBinding
+import com.toddy.comunicacaodemandas.modelo.Anuncio
 import com.toddy.comunicacaodemandas.notification.*
 import com.toddy.comunicacaodemandas.notification.Notification
+import com.toddy.comunicacaodemandas.webClient.AnuncioFirebase
 import java.util.*
 
 
@@ -30,53 +33,6 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupWithNavController(binding.bottomNavView, navController)
 
         createNotificationChannel()
-
-    }
-
-    private fun scheduleNotification() {
-        val intent = Intent(applicationContext, Notification::class.java)
-        val title = "Titulo"
-        val message = "Mensagem"
-        intent.putExtra(titleExtra, title)
-        intent.putExtra(messageExtra, message)
-
-        val pendingIntent = PendingIntent.getBroadcast(
-            applicationContext,
-            notificationID,
-            intent,
-            PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT
-        )
-
-        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val time = getTime()
-        alarmManager.setExactAndAllowWhileIdle(
-            AlarmManager.RTC_WAKEUP,
-            time,
-            pendingIntent
-        )
-        showAlert(time, title, message)
-    }
-
-    private fun showAlert(time: Long, title: String, message: String) {
-        val date = Date(time)
-        val dateFormat = android.text.format.DateFormat.getLongDateFormat(applicationContext)
-        val timeFormat = android.text.format.DateFormat.getTimeFormat(applicationContext)
-
-        AlertDialog.Builder(this)
-            .setTitle("Notification Scheduled")
-            .setMessage(
-                "Title: " + title +
-                        "\nMessage: " + message +
-                        "\nAt: " + dateFormat.format(date) + " " + timeFormat.format(date)
-            )
-            .setPositiveButton("Okay") { _, _ -> }
-            .show()
-    }
-
-    private fun getTime(): Long {
-        val calendar = Calendar.getInstance()
-        calendar.add(Calendar.SECOND, 10)
-        return calendar.timeInMillis
     }
 
     private fun createNotificationChannel() {
@@ -87,10 +43,5 @@ class MainActivity : AppCompatActivity() {
         channel.description = desc
         val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         notificationManager.createNotificationChannel(channel)
-
-        scheduleNotification()
     }
-
-
-
 }

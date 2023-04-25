@@ -15,6 +15,7 @@ data class Anuncio(
     var prazo: String? = "",
     var prioridade: Int? = 0,
     var finalizado: Boolean = false,
+    var notificacao:Boolean = false,
 ) : Parcelable {
     init {
         FirebaseDatabase.getInstance().reference.push().key?.let {

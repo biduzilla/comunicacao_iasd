@@ -3,20 +3,21 @@ package com.toddy.comunicacaodemandas.ui.activity
 import android.app.*
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import androidx.appcompat.app.AppCompatActivity
 import com.toddy.comunicacaodemandas.ID_ANUNCIO
-import com.toddy.comunicacaodemandas.webClient.AnuncioFirebase
 import com.toddy.comunicacaodemandas.databinding.ActivityFormAnuncioBinding
 import com.toddy.comunicacaodemandas.extensions.Toast
 import com.toddy.comunicacaodemandas.modelo.Anuncio
 import com.toddy.comunicacaodemandas.notification.*
 import com.toddy.comunicacaodemandas.notification.Notification
+import com.toddy.comunicacaodemandas.webClient.AnuncioFirebase
 import java.text.SimpleDateFormat
 import java.util.*
+import java.util.concurrent.TimeUnit
 
 class FormAnuncioActivity : AppCompatActivity() {
 
@@ -36,7 +37,7 @@ class FormAnuncioActivity : AppCompatActivity() {
         binding.toolbarVoltar.tvTitulo.text = "Salvar Anúncio"
         configClicks()
         verificaUpdate()
-        createNotificationChannel()
+
     }
 
     private fun verificaUpdate() {
@@ -135,15 +136,40 @@ class FormAnuncioActivity : AppCompatActivity() {
                         this
                     )
 
-                    var i: Int = 7
-                    repeat(7) {
-                        scheduleNotification(anuncio!!, i)
-                        i--
-                    }
+
+                    val daysDiff = diferencaEntreDatas()
+
+                    marcarDatasNotificacao(daysDiff)
 
                 }
             }
         }
+    }
+
+    private fun marcarDatasNotificacao(daysDiff: Int) {
+        var i: Int = if (daysDiff < 7) {
+            daysDiff
+        } else {
+            7
+        }
+        repeat(i) {
+            scheduleNotification(anuncio!!, i)
+            i--
+        }
+    }
+
+    private fun diferencaEntreDatas(): Int {
+        val calendar = Calendar.getInstance()
+        val formatter = SimpleDateFormat("dd/MM/yyyy")
+        val date = formatter.parse(dataSelecionada)
+        date?.let {
+            calendar.time = it
+        }
+
+        val msDiff: Long =
+            calendar.timeInMillis - Calendar.getInstance().timeInMillis
+        val daysDiff = TimeUnit.MILLISECONDS.toDays(msDiff).toInt()
+        return daysDiff + 1
     }
 
     private fun ocultarTeclado() {
@@ -216,31 +242,48 @@ class FormAnuncioActivity : AppCompatActivity() {
             time,
             pendingIntent
         )
+
+        val date = Date(time)
+        val dateFormat = android.text.format.DateFormat.getLongDateFormat(applicationContext)
+        val timeFormat = android.text.format.DateFormat.getTimeFormat(applicationContext)
+
+        Log.i(
+            "infoteste",
+            "scheduleNotification: At:  ${dateFormat.format(date)} -- ${timeFormat.format(date)}"
+        )
     }
 
     private fun getTime(days: Int): Long {
+        val calendar = setTime()!!
+        Log.i("infoteste", "days: $days")
+
+        calendar.add(Calendar.SECOND, 5)
+        return calendar.timeInMillis
+
+//        val calendarPrazo = Calendar.getInstance()
+//        calendarPrazo.add(Calendar.SECOND, 5)
+//        return calendarPrazo.timeInMillis
+    }
+
+    private fun setTime(): Calendar? {
         val formatter = SimpleDateFormat("dd/MM/yyyy")
         val date = formatter.parse(dataSelecionada)
 
         val calendar = Calendar.getInstance()
         calendar.time = date!!
 
-        calendar.add(Calendar.DAY_OF_MONTH, -days)
-        calendar.add(Calendar.SECOND, 10)
-        val myFormat = "dd/MM/yyyy" // mention the format you need
-        val sdf = SimpleDateFormat(myFormat, Locale.US)
-        val data = sdf.format(calendar.time)
-        Log.i("infoteste", "getTime: $data")
-        return calendar.timeInMillis
+        val calendarNow = Calendar.getInstance()
+        val hour = calendarNow.get(Calendar.HOUR_OF_DAY)
+        val minute = calendarNow.get(Calendar.MINUTE)
+        val second = calendarNow.get(Calendar.SECOND)
+
+        val year = calendar.get(Calendar.YEAR)
+        val month = calendar.get(Calendar.MONTH)
+        val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+        calendar.set(year, month, day, hour, minute, second)
+        return calendar
     }
 
-    private fun createNotificationChannel() {
-        val name = "Notif Channel"
-        val desc = "A Description of the Channel"
-        val importance = NotificationManager.IMPORTANCE_DEFAULT
-        val channel = NotificationChannel(channelID, name, importance)
-        channel.description = desc
-        val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-        notificationManager.createNotificationChannel(channel)
-    }
+
 }

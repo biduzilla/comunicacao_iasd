@@ -6,7 +6,6 @@ import android.app.TaskStackBuilder
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import androidx.core.app.NotificationCompat
 import com.toddy.comunicacaodemandas.R
 import com.toddy.comunicacaodemandas.ui.activity.MainActivity

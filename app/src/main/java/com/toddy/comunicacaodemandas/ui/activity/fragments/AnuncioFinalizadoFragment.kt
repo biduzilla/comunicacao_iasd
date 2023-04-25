@@ -47,7 +47,7 @@ class AnuncioFinalizadoFragment : Fragment() {
 
     private fun buscaAnuncios() {
 
-        AnuncioFirebase().recuperaAnuncios { anunciosList ->
+        AnuncioFirebase().recuperaAnuncios(adapterFinalizado = adapter) { anunciosList ->
             anunciosList?.let {
                 val anuncioFinalizados = mutableListOf<Anuncio>()
 

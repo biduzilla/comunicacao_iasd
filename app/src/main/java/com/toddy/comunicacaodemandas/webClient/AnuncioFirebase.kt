@@ -12,6 +12,8 @@ import com.toddy.comunicacaodemandas.databinding.ActivityFormAnuncioBinding
 import com.toddy.comunicacaodemandas.extensions.Toast
 import com.toddy.comunicacaodemandas.modelo.Anuncio
 import com.toddy.comunicacaodemandas.ui.activity.DetalhesAnuncioActivity
+import com.toddy.comunicacaodemandas.ui.adapter.AnuncioAdapter
+import com.toddy.comunicacaodemandas.ui.adapter.AnuncioFinalizadoAdapter
 
 class AnuncioFirebase {
     fun salvarAnuncio(
@@ -37,13 +39,19 @@ class AnuncioFirebase {
             }
     }
 
-    fun recuperaAnuncios(anunciosRecuperados: (anunciosList: List<Anuncio>?) -> Unit) {
+    fun recuperaAnuncios(
+        adapter: AnuncioAdapter? = null,
+        adapterFinalizado: AnuncioFinalizadoAdapter? = null,
+        anunciosRecuperados: (anunciosList: List<Anuncio>?) -> Unit
+    ) {
         val anuncios = mutableListOf<Anuncio>()
 
         FirebaseDatabase.getInstance().reference
             .child("anuncios")
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
+                    adapter?.atualiza(emptyList())
+                    adapterFinalizado?.atualiza(emptyList())
                     if (snapshot.exists()) {
                         snapshot.children.forEach {
                             it.getValue(Anuncio::class.java)?.let { anuncio ->
